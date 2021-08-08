@@ -1,7 +1,7 @@
-from gcs_helper import GCSHelper
-from gbq_helper import GBQHelper
+from src.gcs_helper import GCSHelper
+from src.gbq_helper import GBQHelper
 from secret.config import config
-from pandas_helper import PandasHelper
+from src.pandas_helper import PandasHelper
 
 
 class App:
@@ -26,6 +26,5 @@ class App:
 
 
 
-app = App()
-app.solve()
+
 

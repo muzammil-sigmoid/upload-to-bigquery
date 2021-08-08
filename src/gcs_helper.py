@@ -18,8 +18,9 @@ class GCSHelper:
         try:
             bucket = self.storage_client.bucket(bucket_name)
             blob = bucket.blob(file_name)
-            blob.download_to_filename('./../res/'+file_name)
+            blob.download_to_filename(self.FOLDER_PATH+file_name)
         except Exception as err:
+            print(err)
             raise Exception("Fail to download "+file_name+".")
 
 
