@@ -12,10 +12,9 @@ class GBQHelper:
         self.bq_client = bigquery.Client.from_service_account_json(keypath)
 
     def check(self):
-        print("he")
         df = pandas_gbq.read_gbq("select * from `airflow-1-321705.vehicle_analytics.latest`")
         print(type(df))
-        print("hello")
+        
 
     def create_dataset(self, dataset_id, project_id):
         try:
