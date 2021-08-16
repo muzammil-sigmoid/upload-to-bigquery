@@ -7,6 +7,7 @@ class GCSHelper:
         self.FOLDER_PATH = folder_path
         self.storage_client = storage.Client.from_service_account_json(self.KEY_PATH)
 
+    # print the bucket list
     def list_buckets(self):
         try:
             buckets = list(self.storage_client.list_buckets())
