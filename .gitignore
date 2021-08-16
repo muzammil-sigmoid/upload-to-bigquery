@@ -1,3 +1,4 @@
+# ignoring libraries and configurations
 venv
 .idea
 secret
