@@ -12,5 +12,4 @@ class PandasHelper:
             print(err)
             raise Exception("CSV could not be loaded")
 
-    def left_join(self,left_df, right_df, on_column):
-        pass
+    
