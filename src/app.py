@@ -12,6 +12,7 @@ class App:
         self.gbq = GBQHelper(config["KEY_PATH"], config["FOLDER_PATH"], config["PROJECT_ID"])
         self.pd = PandasHelper(config["FOLDER_PATH"])
 
+    #driver function
     def solve(self):
         try:
             self.gcs.get_file('customers.csv', 'assignment-customers-orders')
